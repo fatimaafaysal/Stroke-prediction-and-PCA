@@ -10,6 +10,8 @@ import matplotlib.pyplot as plt
 warnings.filterwarnings('ignore')
 import seaborn as sns
 from scipy import stats
+import numpy as np
+import pandas as pd
 from sklearn.feature_selection import SelectKBest
 from sklearn.feature_selection import chi2
 from sklearn.preprocessing import QuantileTransformer
