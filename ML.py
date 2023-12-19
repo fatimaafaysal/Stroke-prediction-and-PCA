@@ -249,7 +249,7 @@ def train_evaluate_model(y_test):
 
 
 results = train_evaluate_model(y_test)
-results.index = ['K Nearest Neighbors - Method 1']
+results.index = ['K Nearest Neighbors']
 results.style.background_gradient(cmap = sns.color_palette("blend:green,red", as_cmap=True))
 
 
@@ -290,7 +290,7 @@ print(accuracy_score(y_test, y_pred_test))
 
 
 resultsNB = train_evaluate_model(y_test)
-resultsNB.index = ['Naive Bayes - Method 1']
+resultsNB.index = ['Naive Bayes']
 results = results.append(resultsNB)
 results.style.background_gradient(cmap = sns.color_palette("blend:red,green", as_cmap=True))
 
@@ -343,7 +343,7 @@ print(accuracy_score(y_test, y_pred_test))
 
 
 resultsDT = train_evaluate_model(y_test)
-resultsDT.index = ['Decision Trees - Method 1']
+resultsDT.index = ['Decision Trees']
 results = results.append(resultsDT)
 results.style.background_gradient(cmap = sns.color_palette("blend:red,green", as_cmap=True))
 
@@ -385,7 +385,7 @@ print(accuracy_score(y_test, y_pred_test))
 
 
 resultsRF = train_evaluate_model(y_test)
-resultsRF.index = ['Random Forest - Method 1']
+resultsRF.index = ['Random Forest']
 results = results.append(resultsRF)
 results.style.background_gradient(cmap = sns.color_palette("blend:red,green", as_cmap=True))
 
